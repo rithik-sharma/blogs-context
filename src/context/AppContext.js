@@ -30,7 +30,7 @@ export default function AppContextProvider({ children }) {
     setLoading(false);
   }
 
-  function handlePageChnage(page) {
+  function handlePageChange(page) {
     setPage(page);
     fetchBlogPosts(page);
   }
@@ -45,7 +45,7 @@ export default function AppContextProvider({ children }) {
     totalPages,
     setTotalPages,
     fetchBlogPosts,
-    handlePageChnage,
+    handlePageChange,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

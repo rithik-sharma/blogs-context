@@ -4,7 +4,7 @@ import "./Spinner.css";
 const Spinner = () => {
   return (
     <div>
-      <div className="custom-loader"></div>
+      <div className="h-screen custom-loader "></div>
     </div>
   );
 };
